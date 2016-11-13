@@ -1,0 +1,17 @@
+import UIKit
+
+for n in 1...100 {
+    
+    if (n % 5) == 0 {
+        print("\(n) el número Bingo")
+    }
+    if ( n % 2 ) == 0 {
+        print("\(n) el número par")
+    } else {
+        print("\(n) el número impar")
+    }
+    
+    if n >= 30 && n <= 40 {
+        print("\(n) Viva Swift")
+    }
+}

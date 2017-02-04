@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0059C7791E2D5096003EABFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059C7781E2D5096003EABFE /* AppDelegate.swift */; };
+		0059C77B1E2D5096003EABFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059C77A1E2D5096003EABFE /* ViewController.swift */; };
+		0059C77E1E2D5096003EABFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0059C77C1E2D5096003EABFE /* Main.storyboard */; };
+		0059C7811E2D5096003EABFE /* concertum.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0059C77F1E2D5096003EABFE /* concertum.xcdatamodeld */; };
+		0059C7831E2D5096003EABFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0059C7821E2D5096003EABFE /* Assets.xcassets */; };
+		0059C7861E2D5096003EABFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0059C7841E2D5096003EABFE /* LaunchScreen.storyboard */; };
+		0059C78F1E2D5277003EABFE /* ajuntament-barcelona.png in Resources */ = {isa = PBXBuildFile; fileRef = 0059C78E1E2D5277003EABFE /* ajuntament-barcelona.png */; };
+		0059C7911E2D57A4003EABFE /* Partido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0059C7901E2D57A4003EABFE /* Partido.swift */; };
+		0077B8301E34A98200C5C8EA /* Logo_Guanyem_Barcelona.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B82F1E34A98200C5C8EA /* Logo_Guanyem_Barcelona.png */; };
+		0077B8321E34AA2D00C5C8EA /* Logo_CiU.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B8311E34AA2D00C5C8EA /* Logo_CiU.png */; };
+		0077B8341E34AE9E00C5C8EA /* logo_ERC_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B8331E34AE9E00C5C8EA /* logo_ERC_2.png */; };
+		0077B8361E34B3A900C5C8EA /* cs.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B8351E34B3A900C5C8EA /* cs.png */; };
+		0077B8381E34B42100C5C8EA /* Logotip_del_PSC.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B8371E34B42100C5C8EA /* Logotip_del_PSC.svg.png */; };
+		0077B83A1E34B50700C5C8EA /* logo-pp-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B8391E34B50700C5C8EA /* logo-pp-2.png */; };
+		0077B83C1E34B51300C5C8EA /* logo_CUP_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0077B83B1E34B51300C5C8EA /* logo_CUP_2.png */; };
+		0077B8E81E31E212002E885C /* ViewResultadoVotacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077B8E71E31E212002E885C /* ViewResultadoVotacionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0059C7751E2D5096003EABFE /* concertum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = concertum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0059C7781E2D5096003EABFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0059C77A1E2D5096003EABFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0059C77D1E2D5096003EABFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0059C7801E2D5096003EABFE /* concertum.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = concertum.xcdatamodel; sourceTree = "<group>"; };
+		0059C7821E2D5096003EABFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0059C7851E2D5096003EABFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0059C7871E2D5096003EABFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0059C78E1E2D5277003EABFE /* ajuntament-barcelona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ajuntament-barcelona.png"; sourceTree = "<group>"; };
+		0059C7901E2D57A4003EABFE /* Partido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partido.swift; sourceTree = "<group>"; };
+		0077B82F1E34A98200C5C8EA /* Logo_Guanyem_Barcelona.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_Guanyem_Barcelona.png; sourceTree = "<group>"; };
+		0077B8311E34AA2D00C5C8EA /* Logo_CiU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo_CiU.png; sourceTree = "<group>"; };
+		0077B8331E34AE9E00C5C8EA /* logo_ERC_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_ERC_2.png; sourceTree = "<group>"; };
+		0077B8351E34B3A900C5C8EA /* cs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cs.png; sourceTree = "<group>"; };
+		0077B8371E34B42100C5C8EA /* Logotip_del_PSC.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logotip_del_PSC.svg.png; sourceTree = "<group>"; };
+		0077B8391E34B50700C5C8EA /* logo-pp-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-pp-2.png"; sourceTree = "<group>"; };
+		0077B83B1E34B51300C5C8EA /* logo_CUP_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_CUP_2.png; sourceTree = "<group>"; };
+		0077B8E71E31E212002E885C /* ViewResultadoVotacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewResultadoVotacionController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0059C7721E2D5096003EABFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0059C76C1E2D5095003EABFE = {
+			isa = PBXGroup;
+			children = (
+				0059C7771E2D5096003EABFE /* concertum */,
+				0059C7761E2D5096003EABFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0059C7761E2D5096003EABFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0059C7751E2D5096003EABFE /* concertum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0059C7771E2D5096003EABFE /* concertum */ = {
+			isa = PBXGroup;
+			children = (
+				0059C78D1E2D522C003EABFE /* img */,
+				0059C7781E2D5096003EABFE /* AppDelegate.swift */,
+				0059C77A1E2D5096003EABFE /* ViewController.swift */,
+				0059C77C1E2D5096003EABFE /* Main.storyboard */,
+				0059C7821E2D5096003EABFE /* Assets.xcassets */,
+				0059C7841E2D5096003EABFE /* LaunchScreen.storyboard */,
+				0059C7871E2D5096003EABFE /* Info.plist */,
+				0059C77F1E2D5096003EABFE /* concertum.xcdatamodeld */,
+				0059C7901E2D57A4003EABFE /* Partido.swift */,
+				0077B8E71E31E212002E885C /* ViewResultadoVotacionController.swift */,
+			);
+			path = concertum;
+			sourceTree = "<group>";
+		};
+		0059C78D1E2D522C003EABFE /* img */ = {
+			isa = PBXGroup;
+			children = (
+				0077B83B1E34B51300C5C8EA /* logo_CUP_2.png */,
+				0077B8391E34B50700C5C8EA /* logo-pp-2.png */,
+				0077B8371E34B42100C5C8EA /* Logotip_del_PSC.svg.png */,
+				0077B8351E34B3A900C5C8EA /* cs.png */,
+				0077B8331E34AE9E00C5C8EA /* logo_ERC_2.png */,
+				0077B8311E34AA2D00C5C8EA /* Logo_CiU.png */,
+				0077B82F1E34A98200C5C8EA /* Logo_Guanyem_Barcelona.png */,
+				0059C78E1E2D5277003EABFE /* ajuntament-barcelona.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0059C7741E2D5096003EABFE /* concertum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0059C78A1E2D5096003EABFE /* Build configuration list for PBXNativeTarget "concertum" */;
+			buildPhases = (
+				0059C7711E2D5096003EABFE /* Sources */,
+				0059C7721E2D5096003EABFE /* Frameworks */,
+				0059C7731E2D5096003EABFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = concertum;
+			productName = concertum;
+			productReference = 0059C7751E2D5096003EABFE /* concertum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0059C76D1E2D5096003EABFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MSR;
+				TargetAttributes = {
+					0059C7741E2D5096003EABFE = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZMBLR23993;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0059C7701E2D5096003EABFE /* Build configuration list for PBXProject "concertum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0059C76C1E2D5095003EABFE;
+			productRefGroup = 0059C7761E2D5096003EABFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0059C7741E2D5096003EABFE /* concertum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0059C7731E2D5096003EABFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0077B8341E34AE9E00C5C8EA /* logo_ERC_2.png in Resources */,
+				0059C7861E2D5096003EABFE /* LaunchScreen.storyboard in Resources */,
+				0077B83C1E34B51300C5C8EA /* logo_CUP_2.png in Resources */,
+				0077B8381E34B42100C5C8EA /* Logotip_del_PSC.svg.png in Resources */,
+				0059C7831E2D5096003EABFE /* Assets.xcassets in Resources */,
+				0077B8321E34AA2D00C5C8EA /* Logo_CiU.png in Resources */,
+				0059C78F1E2D5277003EABFE /* ajuntament-barcelona.png in Resources */,
+				0059C77E1E2D5096003EABFE /* Main.storyboard in Resources */,
+				0077B8301E34A98200C5C8EA /* Logo_Guanyem_Barcelona.png in Resources */,
+				0077B8361E34B3A900C5C8EA /* cs.png in Resources */,
+				0077B83A1E34B50700C5C8EA /* logo-pp-2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0059C7711E2D5096003EABFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0059C7811E2D5096003EABFE /* concertum.xcdatamodeld in Sources */,
+				0059C77B1E2D5096003EABFE /* ViewController.swift in Sources */,
+				0077B8E81E31E212002E885C /* ViewResultadoVotacionController.swift in Sources */,
+				0059C7791E2D5096003EABFE /* AppDelegate.swift in Sources */,
+				0059C7911E2D57A4003EABFE /* Partido.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0059C77C1E2D5096003EABFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0059C77D1E2D5096003EABFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0059C7841E2D5096003EABFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0059C7851E2D5096003EABFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0059C7881E2D5096003EABFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0059C7891E2D5096003EABFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0059C78B1E2D5096003EABFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZMBLR23993;
+				INFOPLIST_FILE = concertum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.msr.concertum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0059C78C1E2D5096003EABFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZMBLR23993;
+				INFOPLIST_FILE = concertum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mx.msr.concertum;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0059C7701E2D5096003EABFE /* Build configuration list for PBXProject "concertum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0059C7881E2D5096003EABFE /* Debug */,
+				0059C7891E2D5096003EABFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0059C78A1E2D5096003EABFE /* Build configuration list for PBXNativeTarget "concertum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0059C78B1E2D5096003EABFE /* Debug */,
+				0059C78C1E2D5096003EABFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0059C77F1E2D5096003EABFE /* concertum.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0059C7801E2D5096003EABFE /* concertum.xcdatamodel */,
+			);
+			currentVersion = 0059C7801E2D5096003EABFE /* concertum.xcdatamodel */;
+			path = concertum.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0059C76D1E2D5096003EABFE /* Project object */;
+}

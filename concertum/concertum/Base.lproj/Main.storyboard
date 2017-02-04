@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LT6-1S-pmx">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Concertum-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="concertum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q4D-Ar-Fqc"/>
+                        <viewControllerLayoutGuide type="bottom" id="WHq-5C-dny"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="redraw" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ajuntament-barcelona.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ys-1c-r1M">
+                                <rect key="frame" x="16" y="72" width="57" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_ERC_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="rZJ-Go-n2l">
+                                <rect key="frame" x="24" y="358" width="44" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logotip_del_PSC.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="3oU-3x-ODh">
+                                <rect key="frame" x="27" y="407" width="41" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cs.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mio-jp-c3Z">
+                                <rect key="frame" x="24" y="303" width="44" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg0-Yo-c5b">
+                                <rect key="frame" x="37" y="574" width="166" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Aceptar"/>
+                                <connections>
+                                    <segue destination="KRM-e4-T5b" kind="show" id="Sf3-p7-Z1B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUE-b6-JDh">
+                                <rect key="frame" x="99" y="407" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onPscAf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ywf-oR-ZUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7r-ti-ojn">
+                                <rect key="frame" x="95" y="306" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onCsAF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKe-ZU-ube"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB1-Bx-RoX">
+                                <rect key="frame" x="98" y="356" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onErcAF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEe-ND-5CX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9h-Sh-dXj">
+                                <rect key="frame" x="197" y="306" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onCsAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0fh-rY-5bm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFo-42-IuE">
+                                <rect key="frame" x="197" y="356" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onErcAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="98G-Nw-SJn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZJ-jq-r0c">
+                                <rect key="frame" x="198" y="407" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onPscAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pV-eK-tOM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-6w-aed">
+                                <rect key="frame" x="300" y="407" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onPscEc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ir0-CZ-Cs9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBB-Se-3k0">
+                                <rect key="frame" x="299" y="306" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onCsEC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOV-ys-tmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONC-XB-LOD">
+                                <rect key="frame" x="299" y="356" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onErcEC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4EF-aZ-Yxx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ajuntament de Barcelona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BF9-ZD-uMe">
+                                <rect key="frame" x="88" y="86" width="247" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.00083228645819999998" blue="0.089747311440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estàndar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h8-sH-KFc">
+                                <rect key="frame" x="46" y="150" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zjj-Ox-DZS">
+                                <rect key="frame" x="129" y="145" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onEstandar:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ldd-Gp-kC0"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Institucional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53V-IV-fc4">
+                                <rect key="frame" x="206" y="150" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-Ne-AEl">
+                                <rect key="frame" x="320" y="145" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onInstitucional:" destination="BYZ-38-t0r" eventType="valueChanged" id="SHw-c3-2Ur"/>
+                                </connections>
+                            </switch>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_Guanyem_Barcelona.png" translatesAutoresizingMaskIntoConstraints="NO" id="nEU-hv-T32">
+                                <rect key="frame" x="23" y="200" width="45" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIh-85-wNP">
+                                <rect key="frame" x="95" y="204" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onBecAf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0wG-e6-yK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-NE-YyN">
+                                <rect key="frame" x="197" y="204" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onBecAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rqJ-8b-pe9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NsH-Nv-zG7">
+                                <rect key="frame" x="299" y="204" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onBecEc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vrc-cv-wqz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo_CiU.png" translatesAutoresizingMaskIntoConstraints="NO" id="62m-Y7-mI3">
+                                <rect key="frame" x="24" y="254" width="46" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxe-CT-JHT">
+                                <rect key="frame" x="95" y="255" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onCiuAf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vda-Zh-wAV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K4-QX-st7">
+                                <rect key="frame" x="197" y="255" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onCiuAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1b-Rb-H4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbH-C8-i7G">
+                                <rect key="frame" x="299" y="255" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onCiuEC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJh-Zb-BKx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_CUP_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-op-AcH">
+                                <rect key="frame" x="10" y="507" width="63" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-pp-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="QR1-2E-yE8">
+                                <rect key="frame" x="30" y="458" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oai-zL-WfH">
+                                <rect key="frame" x="99" y="458" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onPPAF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ona-St-rDo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9Y-cG-5pT">
+                                <rect key="frame" x="198" y="458" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onPPAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUK-dY-adP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUM-cs-OvO">
+                                <rect key="frame" x="300" y="458" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onPPEC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jj3-Kq-RNa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iji-xl-jPa">
+                                <rect key="frame" x="99" y="507" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A favor"/>
+                                <connections>
+                                    <action selector="onCupAF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGf-m2-nYy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEb-y9-Dec">
+                                <rect key="frame" x="198" y="507" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Abstenció"/>
+                                <connections>
+                                    <action selector="onCupAb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oE5-xi-nFT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWZ-Cu-8gT">
+                                <rect key="frame" x="300" y="507" width="94" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="En contra"/>
+                                <connections>
+                                    <action selector="onCupEC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jv6-5o-ype"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOo-N0-qbH">
+                                <rect key="frame" x="218" y="574" width="164" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Nova votació"/>
+                                <connections>
+                                    <action selector="onLimpiarVotaciones:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AG7-6U-Rfa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(11)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXr-Dk-ons">
+                                <rect key="frame" x="67" y="213" width="27" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(10)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86w-IX-yyi">
+                                <rect key="frame" x="67" y="263" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-Ye-Kr2">
+                                <rect key="frame" x="67" y="319" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFu-gH-zSs">
+                                <rect key="frame" x="67" y="364" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(4)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8l-Vc-9vx">
+                                <rect key="frame" x="69" y="414" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(3)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFb-2o-77b">
+                                <rect key="frame" x="69" y="465" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(3)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzk-Yb-bex">
+                                <rect key="frame" x="75" y="514" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Concertum" id="vPV-lQ-ARz">
+                        <barButtonItem key="backBarButtonItem" title="Tornar" id="gnE-tf-RpI"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="becAF" destination="jIh-85-wNP" id="Pat-IR-zhv"/>
+                        <outlet property="becAb" destination="duz-NE-YyN" id="BHo-nH-ukv"/>
+                        <outlet property="becEC" destination="NsH-Nv-zG7" id="ENx-Qe-Hbb"/>
+                        <outlet property="ciuAF" destination="Wxe-CT-JHT" id="bZc-rl-5sx"/>
+                        <outlet property="ciuAb" destination="3K4-QX-st7" id="3Ok-z6-qsb"/>
+                        <outlet property="ciuEC" destination="KbH-C8-i7G" id="JeH-4q-Lvg"/>
+                        <outlet property="csAF" destination="e7r-ti-ojn" id="hgG-U4-4ad"/>
+                        <outlet property="csAb" destination="Y9h-Sh-dXj" id="ARy-w1-Kei"/>
+                        <outlet property="csEC" destination="IBB-Se-3k0" id="phr-I9-t2k"/>
+                        <outlet property="cupAF" destination="iji-xl-jPa" id="fGE-qg-ncd"/>
+                        <outlet property="cupAb" destination="mEb-y9-Dec" id="TTp-9E-DKm"/>
+                        <outlet property="cupEC" destination="PWZ-Cu-8gT" id="tA0-vI-uhR"/>
+                        <outlet property="ercAF" destination="yB1-Bx-RoX" id="9ei-fa-wVD"/>
+                        <outlet property="ercAb" destination="BFo-42-IuE" id="5KI-2G-WlI"/>
+                        <outlet property="ercEC" destination="ONC-XB-LOD" id="xNH-ka-W0w"/>
+                        <outlet property="ppAF" destination="oai-zL-WfH" id="LZO-7X-e8A"/>
+                        <outlet property="ppAb" destination="w9Y-cG-5pT" id="d3G-8a-kLH"/>
+                        <outlet property="ppEC" destination="QUM-cs-OvO" id="Qvg-38-mOP"/>
+                        <outlet property="pscAF" destination="TUE-b6-JDh" id="eT1-wt-LFR"/>
+                        <outlet property="pscAb" destination="yZJ-jq-r0c" id="G5I-QN-Fni"/>
+                        <outlet property="pscEC" destination="dRJ-6w-aed" id="VgY-Pe-2zf"/>
+                        <outlet property="selEstandar" destination="zjj-Ox-DZS" id="C3f-9r-B6h"/>
+                        <outlet property="selInstitucional" destination="SEW-Ne-AEl" id="ei3-To-sfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="135.32608695652175"/>
+        </scene>
+        <!--Concertum-->
+        <scene sceneID="Zmp-pt-UDU">
+            <objects>
+                <viewController id="KRM-e4-T5b" customClass="ViewResultadoVotacionController" customModule="concertum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="btm-Ac-x24"/>
+                        <viewControllerLayoutGuide type="bottom" id="jeM-V8-Lm9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4F5-Qf-7br">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajuntament-barcelona.png" translatesAutoresizingMaskIntoConstraints="NO" id="G55-36-FEx">
+                                <rect key="frame" x="31" y="75" width="56" height="64"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZW-Pf-mXC">
+                                <rect key="frame" x="224" y="175" width="170" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A favor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b3-jZ-ec7">
+                                <rect key="frame" x="69" y="270" width="63" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abstencions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmM-il-hpr">
+                                <rect key="frame" x="69" y="313" width="112" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En contra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vae-Ie-h61">
+                                <rect key="frame" x="69" y="355.66666666666669" width="85" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Aprovada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fB-sk-aej">
+                                <rect key="frame" x="31" y="460" width="352" height="156"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Regidors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWf-3y-jqE">
+                                <rect key="frame" x="61" y="221" width="128" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipus de votació" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-UW-l1k">
+                                <rect key="frame" x="64" y="175" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajuntament de Barcelona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXo-LY-JIh">
+                                <rect key="frame" x="95" y="93" width="247" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="gve-nd-vbh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.00083228645819999998" blue="0.089747311440000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8u-Od-piM">
+                                <rect key="frame" x="300" y="268" width="41" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKf-iP-OsG">
+                                <rect key="frame" x="295" y="310" width="46" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PS4-dN-3jp">
+                                <rect key="frame" x="301" y="355" width="41" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="3zW-Mx-ydE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dyB-Hq-fqc">
+                                <rect key="frame" x="300" y="219" width="41" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="w3w-tM-hZ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0fB-sk-aej" firstAttribute="top" secondItem="PS4-dN-3jp" secondAttribute="bottom" constant="79" id="2cx-Ld-tVx"/>
+                            <constraint firstItem="vae-Ie-h61" firstAttribute="centerY" secondItem="PS4-dN-3jp" secondAttribute="centerY" id="4Li-mo-KOA"/>
+                            <constraint firstItem="G55-36-FEx" firstAttribute="leading" secondItem="0fB-sk-aej" secondAttribute="leading" id="4ey-G8-cim"/>
+                            <constraint firstItem="XKf-iP-OsG" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="111" id="4qt-LS-VKG"/>
+                            <constraint firstItem="Xlt-UW-l1k" firstAttribute="baseline" secondItem="7ZW-Pf-mXC" secondAttribute="baseline" id="5bm-J8-6yj"/>
+                            <constraint firstItem="LmM-il-hpr" firstAttribute="bottom" secondItem="XKf-iP-OsG" secondAttribute="bottom" id="6WB-2U-Pr0"/>
+                            <constraint firstItem="u8u-Od-piM" firstAttribute="top" secondItem="dyB-Hq-fqc" secondAttribute="bottom" constant="22" id="7yk-WJ-YBO"/>
+                            <constraint firstItem="XKf-iP-OsG" firstAttribute="top" secondItem="u8u-Od-piM" secondAttribute="bottom" constant="15" id="8Hy-81-To7"/>
+                            <constraint firstItem="7ZW-Pf-mXC" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="102" id="9SO-tG-yPa"/>
+                            <constraint firstItem="u8u-Od-piM" firstAttribute="trailing" secondItem="XKf-iP-OsG" secondAttribute="trailing" id="BPm-yf-cDD"/>
+                            <constraint firstItem="u8u-Od-piM" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="113.5" id="ChL-ld-wER"/>
+                            <constraint firstItem="fWf-3y-jqE" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-82" id="Cy3-2V-pHO"/>
+                            <constraint firstItem="4b3-jZ-ec7" firstAttribute="baseline" secondItem="u8u-Od-piM" secondAttribute="firstBaseline" id="FZl-bo-43f"/>
+                            <constraint firstItem="Xlt-UW-l1k" firstAttribute="top" secondItem="7ZW-Pf-mXC" secondAttribute="top" id="HBZ-45-fnM"/>
+                            <constraint firstItem="0fB-sk-aej" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" id="IuA-7d-vF5"/>
+                            <constraint firstItem="dyB-Hq-fqc" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="113.5" id="M8D-NK-jyg"/>
+                            <constraint firstItem="G55-36-FEx" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-148" id="MnN-gz-WRP"/>
+                            <constraint firstItem="Xlt-UW-l1k" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-80" id="NcS-pk-M6q"/>
+                            <constraint firstItem="fWf-3y-jqE" firstAttribute="firstBaseline" secondItem="dyB-Hq-fqc" secondAttribute="firstBaseline" id="OtS-BL-KwE"/>
+                            <constraint firstItem="yXo-LY-JIh" firstAttribute="top" secondItem="btm-Ac-x24" secondAttribute="bottom" constant="29" id="PDa-OU-0sU"/>
+                            <constraint firstItem="PS4-dN-3jp" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="114.5" id="RAl-03-F6v"/>
+                            <constraint firstItem="PS4-dN-3jp" firstAttribute="top" secondItem="XKf-iP-OsG" secondAttribute="bottom" constant="18" id="Rfj-Ef-m4f"/>
+                            <constraint firstItem="PS4-dN-3jp" firstAttribute="centerY" secondItem="4F5-Qf-7br" secondAttribute="centerY" id="Ric-t4-KVL"/>
+                            <constraint firstItem="G55-36-FEx" firstAttribute="centerY" secondItem="yXo-LY-JIh" secondAttribute="centerY" id="YAV-lL-U6B"/>
+                            <constraint firstItem="fWf-3y-jqE" firstAttribute="bottom" secondItem="dyB-Hq-fqc" secondAttribute="bottom" id="b2A-0s-D0u"/>
+                            <constraint firstItem="yXo-LY-JIh" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="11.5" id="egA-fk-Fzt"/>
+                            <constraint firstItem="G55-36-FEx" firstAttribute="top" secondItem="btm-Ac-x24" secondAttribute="bottom" constant="11" id="gzC-aM-e0w"/>
+                            <constraint firstItem="yXo-LY-JIh" firstAttribute="leading" secondItem="G55-36-FEx" secondAttribute="trailing" constant="8" symbolic="YES" id="i8q-75-19A"/>
+                            <constraint firstItem="4b3-jZ-ec7" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-106.5" id="ics-LK-Fcl"/>
+                            <constraint firstItem="jeM-V8-Lm9" firstAttribute="top" secondItem="0fB-sk-aej" secondAttribute="bottom" constant="120" id="jPR-Ak-AtC"/>
+                            <constraint firstItem="LmM-il-hpr" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-82" id="kyq-oo-k5U"/>
+                            <constraint firstItem="dyB-Hq-fqc" firstAttribute="leading" secondItem="u8u-Od-piM" secondAttribute="leading" id="sUF-2d-qi5"/>
+                            <constraint firstItem="7ZW-Pf-mXC" firstAttribute="trailing" secondItem="4F5-Qf-7br" secondAttribute="trailingMargin" id="uuM-WI-DhW"/>
+                            <constraint firstItem="vae-Ie-h61" firstAttribute="centerX" secondItem="4F5-Qf-7br" secondAttribute="centerX" constant="-95.5" id="x3I-YF-dDo"/>
+                            <constraint firstItem="dyB-Hq-fqc" firstAttribute="top" secondItem="7ZW-Pf-mXC" secondAttribute="bottom" constant="22" id="xFT-p6-8aq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Concertum" id="l15-05-Y2Z">
+                        <barButtonItem key="backBarButtonItem" title="Tornar" id="bYB-Y0-8Sr"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lAbstencion" destination="XKf-iP-OsG" id="Ox2-5Y-aBr"/>
+                        <outlet property="lAfavor" destination="u8u-Od-piM" id="Fsq-aE-Cgd"/>
+                        <outlet property="lEncontra" destination="PS4-dN-3jp" id="OTn-ae-oXv"/>
+                        <outlet property="lResultadoVotacion" destination="0fB-sk-aej" id="iMr-9R-naW"/>
+                        <outlet property="lTipoVotacion" destination="7ZW-Pf-mXC" id="bLy-48-wIX"/>
+                        <outlet property="lTotalRegidors" destination="dyB-Hq-fqc" id="ybt-8u-mpb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0P-gk-yrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.289855072464" y="136.14130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uno-Bv-xIv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LT6-1S-pmx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f0O-w8-1zV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iHt-gL-A1g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyn-Xh-6Ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.800000000000004" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_CiU.png" width="170" height="141"/>
+        <image name="Logo_Guanyem_Barcelona.png" width="170" height="170"/>
+        <image name="Logotip_del_PSC.svg.png" width="160" height="160"/>
+        <image name="ajuntament-barcelona.png" width="204" height="247"/>
+        <image name="cs.png" width="150" height="150"/>
+        <image name="logo-pp-2.png" width="170" height="169"/>
+        <image name="logo_CUP_2.png" width="170" height="71"/>
+        <image name="logo_ERC_2.png" width="170" height="96"/>
+    </resources>
+</document>
